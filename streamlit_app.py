@@ -1,5 +1,5 @@
 import streamlit as st
-from loop_test2 import main as npv_calculate
+from loop_test3 import main as npv_calculate
 import pandas as pd
 
 st.write('# NPV Calculator')

@@ -1,2 +1,2 @@
 xlwings
-pandas
+win32com 

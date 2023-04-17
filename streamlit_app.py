@@ -1,6 +1,7 @@
 import streamlit as st
-from loop_test3 import main as npv_calculate
+from loop_test2 import main as npv_calculate
 import pandas as pd
+import platform
 
 st.write('# NPV Calculator')
 
@@ -9,6 +10,11 @@ uploaded_file = st.file_uploader(
     "Choose a file",
     accept_multiple_files=False,
     type=['xlsx', 'xls'])
+
+sys = platform.system()
+if sys == "Linux":
+    st.warning('This app is not supported on Linux system.')
+
 
 if uploaded_file is not None:
     # get the file name

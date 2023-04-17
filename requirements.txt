@@ -1,2 +1,3 @@
-xlwings
-win32com
+xlwings==0.30.4
+pandas==2.0.0
+streamlit~=1.21.0

@@ -5,7 +5,10 @@ import pandas as pd
 st.write('# NPV Calculator')
 
 # let user upload a excel
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file = st.file_uploader(
+    "Choose a file",
+    accept_multiple_files=False,
+    type=['xlsx', 'xls'])
 
 if uploaded_file is not None:
     # get the file name
